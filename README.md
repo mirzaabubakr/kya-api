@@ -13,7 +13,7 @@ This project is a KYC (Know Your Customer) API that helps in verifying the ident
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/abubakr/kyc-api.git
+   git clone https://github.com/mirzaabubakr/kyc-api.git
    ```
 2. Navigate to the project directory:
    ```sh
