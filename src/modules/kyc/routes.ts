@@ -6,9 +6,15 @@ const roleAuth = require("../../middleware/role");
 
 import multer from "multer";
 import { accessAllowed } from "../../utils/permision";
+const upload = multer({ dest: "uploads/" });
 
-router.post("/kyc", auth, roleAuth(accessAllowed.USER_ONLY), submitKYC);
-
+router.post(
+  "/kyc",
+  auth,
+  roleAuth(accessAllowed.USER_ONLY),
+  upload.single("document"),
+  submitKYC
+);
 router.get("/kyc", auth, roleAuth(accessAllowed.ALL_USERS), getKYC);
 
 router.patch("/kyc/:id", auth, roleAuth(accessAllowed.ADMIN_ONLY), updateKYC);
