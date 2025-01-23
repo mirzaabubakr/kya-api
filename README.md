@@ -37,7 +37,7 @@ This project is a KYC (Know Your Customer) API that helps in verifying the ident
    ```sh
    npm run dev
    ```
-2. The API will be available at `http://localhost:3000`.
+2. The API will be available at `http://localhost:{PORT}`.
 
 ## API Endpoints
 
