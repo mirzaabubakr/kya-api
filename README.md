@@ -20,6 +20,13 @@ This project is a KYC (Know Your Customer) API that helps in verifying the ident
    cd kyc-api
    ```
 3. Install dependencies:
+
+   ```sh
+   npm install
+
+   ```
+
+4. Add .env file as specified in .env.sample:
    ```sh
    npm install
    ```
@@ -28,7 +35,7 @@ This project is a KYC (Know Your Customer) API that helps in verifying the ident
 
 1. Start the server:
    ```sh
-   npm start
+   npm run dev
    ```
 2. The API will be available at `http://localhost:3000`.
 
